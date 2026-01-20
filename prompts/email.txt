@@ -1,0 +1,12 @@
+Write a concise follow-up email (Chinese by default, optionally bilingual if lang=BILINGUAL) based on the extracted fields.
+Include:
+- Key summary bullets
+- 3 proposed next steps
+- 2-4 clarification questions (if needed)
+No PII.
+Return plain text only.
+Fields JSON:
+{fields_json}
+Scores JSON:
+{scores_json}
+lang={lang}

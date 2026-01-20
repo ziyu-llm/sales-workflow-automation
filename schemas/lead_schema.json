@@ -1,0 +1,28 @@
+{
+  "lead_id": "string",
+  "source": "string",
+  "account_name": "string",
+  "industry": "string",
+  "use_case": "string",
+  "pain_points": [
+    "string"
+  ],
+  "must_haves": [
+    "string"
+  ],
+  "nice_to_haves": [
+    "string"
+  ],
+  "budget": "string",
+  "timeline": "string",
+  "stakeholders": [
+    "string"
+  ],
+  "open_questions": [
+    "string"
+  ],
+  "pii_redacted": true,
+  "text_hash": "string",
+  "raw_text_excerpt": "string",
+  "business_model": "string"
+}

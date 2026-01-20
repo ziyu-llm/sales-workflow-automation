@@ -1,0 +1,45 @@
+{
+  "language": "ZH",
+  "owner": "You",
+  "redact_pii": true,
+  "max_excerpt_chars": 500,
+  "scoring": {
+    "base_fit": 50,
+    "base_intent": 50,
+    "fit_industry_known": 10,
+    "fit_crm_salesforce": 10,
+    "fit_mentions_automation_tracking": 10,
+    "intent_budget_known": 15,
+    "intent_timeline_known": 10,
+    "intent_few_open_questions": 10
+  },
+  "stage_rules": [
+    {
+      "name": "SQL (High priority)",
+      "min_fit": 70,
+      "min_intent": 75
+    },
+    {
+      "name": "MQL (Nurture)",
+      "min_fit": 0,
+      "min_intent": 60
+    },
+    {
+      "name": "Early (Needs discovery)",
+      "min_fit": 0,
+      "min_intent": 0
+    }
+  ],
+  "crm_export": {
+    "salesforce": {
+      "Lead": {
+        "Company": "account_name",
+        "Industry": "industry",
+        "Description": "summary_text",
+        "Status": "stage",
+        "Rating": "rating",
+        "LeadSource": "source"
+      }
+    }
+  }
+}
